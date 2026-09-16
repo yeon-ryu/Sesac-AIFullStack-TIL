@@ -35,7 +35,7 @@ UI : 사용자 인터페이스
 1. React CDN 방식으로 추가 [React CDN 링크](https://ko.legacy.reactjs.org/docs/cdn-links.html)
 2. Babel CDN 방식으로 추가 [Babel CDN 링크](https://babeljs.io/docs/babel-standalone#installation)
 #### JSX 는 JavaScript 의 확장문법이기에 JavaScript 로 변환하기 위해 Babel 이 필요하다.
-```jsx
+```html
 <head>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -63,7 +63,7 @@ UI : 사용자 인터페이스
 ## 엘리먼트 생성과 렌더링
 리액트는 root 라는 id 를 가진 div 안을 렌더링 하는 방식으로 사용한다.  
 React 엘리먼트는 일종의 설계 정보 이다.
-```jsx
+```html
 <head>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -106,7 +106,7 @@ React 엘리먼트는 일종의 설계 정보 이다.
 5. 같은 레벨의 부모 태그가 있으면 안된다. 무조건 하나의 태그로 한번 감싸야 함.
     - Fragment : 여러 요소를 하나로 묶어주기 위한 특별한 빈 태그 <></>
 
-```jsx
+```html
 <script type="text/babel">
     const user = {
         name : '홍길동',
@@ -160,7 +160,7 @@ React 엘리먼트를 반환하는 **자바스크립트 함수** 이고 반드�
 &nbsp;
 
 ### 클래스형 컴포넌트
-```jsx
+```html
 <script type="text/babel">
     /**
      * 클래스형 컴포넌트, 컴포넌트는 앞 글자를 반드시 대문자로 시작
@@ -180,7 +180,7 @@ React 엘리먼트를 반환하는 **자바스크립트 함수** 이고 반드�
 &nbsp;
 
 ### 함수형 컴포넌트
-```jsx
+```html
  <script type="text/babel">
     /**
      * 함수형 컴포넌트
@@ -200,7 +200,7 @@ React 엘리먼트를 반환하는 **자바스크립트 함수** 이고 반드�
 
 ### 함수형 컴포넌트 - JSX 방식
 Babel 이 이러한 JSX 문법을 위와 같은 JS 방식 코드로 번역해준다.
-```jsx
+```html
  <script type="text/babel">
     // JSX 방식
     function NewWay() {
@@ -220,7 +220,7 @@ Babel 이 이러한 JSX 문법을 위와 같은 JS 방식 코드로 번역해준
 &nbsp;
 
 ### 컴포넌트 조합(합성)
-```jsx
+```html
 <script type="text/babel">
     function App() {
         return (
@@ -242,7 +242,7 @@ Babel 이 이러한 JSX 문법을 위와 같은 JS 방식 코드로 번역해준
 
 ## Re-Rendering
 코드상으론 전체를 렌더링하더라도 Virtual DOM 이 차이점만 비교해서 실제 DOM 이 그 부분만 렌더링하기에 React 가 빠르다.
-```jsx
+```html
 <script type="text/babel">
     function Clock() {
         return (<>
@@ -273,7 +273,7 @@ Babel 이 이러한 JSX 문법을 위와 같은 JS 방식 코드로 번역해준
 - 변수나 숫자 같은 값을 넘길 때는 {}를 사용한다.
 - 태그 사이에 넣은 값은 props.children 으로 전달된다.
 - props 를 넘기지 않았을 경우, 매개변수에서 기본값을 설정했다면 기본값이 적용되고 아니라면 undefined 가 나온다.
-```jsx
+```html
 <script type="text/babel">
     /**
      * Props : 부모 컴포넌트가 자식 컴포넌트에게 데이터를 전달하는 '통로'
