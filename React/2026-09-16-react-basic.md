@@ -1,21 +1,3 @@
-- [React](#react)
-      - [**React** : JavaScript 를 위한 **UI 라이브러리**](#react--javascript-를-위한-ui-라이브러리)
-  - [React 특징](#react-특징)
-    - [동작 원리](#동작-원리)
-      - [브라우저 렌더링 엔진 동작 과정](#브라우저-렌더링-엔진-동작-과정)
-      - [React 의 Re-Randering](#react-의-re-randering)
-    - [React 시작](#react-시작)
-      - [JSX 는 JavaScript 의 확장문법이기에 JavaScript 로 변환하기 위해 Babel 이 필요하다.](#jsx-는-javascript-의-확장문법이기에-javascript-로-변환하기-위해-babel-이-필요하다)
-  - [엘리먼트 생성과 렌더링](#엘리먼트-생성과-렌더링)
-  - [JSX 문법](#jsx-문법)
-  - [Component](#component)
-    - [클래스형 컴포넌트](#클래스형-컴포넌트)
-    - [함수형 컴포넌트](#함수형-컴포넌트)
-    - [함수형 컴포넌트 - JSX 방식](#함수형-컴포넌트---jsx-방식)
-    - [컴포넌트 조합(합성)](#컴포넌트-조합합성)
-  - [Re-Rendering](#re-rendering)
-  - [Props](#props)
-
 # React
 #### **React** : JavaScript 를 위한 **UI 라이브러리**  
 JavaScript 처럼 Dom 을 하나하나 조작하는 방식 : 명령형 프로그래밍  
@@ -338,3 +320,23 @@ Babel 이 이러한 JSX 문법을 위와 같은 JS 방식 코드로 번역해준
     root.render(<App />);
 </script>
 ```
+
+&nbsp;
+
+- [React](#react)
+      - [**React** : JavaScript 를 위한 **UI 라이브러리**](#react--javascript-를-위한-ui-라이브러리)
+  - [React 특징](#react-특징)
+    - [동작 원리](#동작-원리)
+      - [브라우저 렌더링 엔진 동작 과정](#브라우저-렌더링-엔진-동작-과정)
+      - [React 의 Re-Randering](#react-의-re-randering)
+    - [React 시작](#react-시작)
+      - [JSX 는 JavaScript 의 확장문법이기에 JavaScript 로 변환하기 위해 Babel 이 필요하다.](#jsx-는-javascript-의-확장문법이기에-javascript-로-변환하기-위해-babel-이-필요하다)
+  - [엘리먼트 생성과 렌더링](#엘리먼트-생성과-렌더링)
+  - [JSX 문법](#jsx-문법)
+  - [Component](#component)
+    - [클래스형 컴포넌트](#클래스형-컴포넌트)
+    - [함수형 컴포넌트](#함수형-컴포넌트)
+    - [함수형 컴포넌트 - JSX 방식](#함수형-컴포넌트---jsx-방식)
+    - [컴포넌트 조합(합성)](#컴포넌트-조합합성)
+  - [Re-Rendering](#re-rendering)
+  - [Props](#props)
