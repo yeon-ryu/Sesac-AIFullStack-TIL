@@ -1,6 +1,10 @@
 # TIL (Today I Learned)
 
-## VSCode 환경설정
+## Node.js 설치
+1. Node.js 설치 (기본 세팅으로)
+2. node -v , npm -v 로 잘 설치됐는지 버전 확인
+
+## VSCode 환경 설정
 1. 설정 오픈
 2. Editor > Inline Suggest: Enabled 체크 해제 (자동 코딩 방지)
 3. Extensions > Emmet > Trigger Expension On Tab 체크 (Tab 키로 태그 자동 완성)
@@ -18,3 +22,15 @@
 
 ### Live Server
 Enable(Workspace) 를 누르고 오른쪽 아래 Go Live 를 누르면 저장한 변경사항이 바로 반영되는 웹 페이지 오픈
+
+## React 개발 환경 설정
+### Next.js 프로젝트 생성
+```bash
+npx create-next-app@latest 프로젝트명
+```
+
+### React 실행
+```bash
+npm install
+npm run dev
+```
