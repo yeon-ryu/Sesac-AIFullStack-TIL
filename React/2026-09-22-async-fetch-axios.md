@@ -55,11 +55,13 @@ async function run() {
 run();
 ```
 
+## 서버와 통신
+
+**Ajax** : 페이지 새로고침 없이 필요한 데이터만 서버와 비동기적으로 주고받는 기술
+
 ## Fetch API
 
 **Fetch API** : 페이지 일부만 구현하는데 필요한 도구. **JavaScript 에 내장**된 기능
-
-**Ajax** : 페이지 새로고침 없이 필요한 데이터만 서버와 비동기적으로 주고받는 기술
 
 Fetch API 는 비동기 작업이기에 Promise 를 반환한다.
 
@@ -337,6 +339,7 @@ function App() {
 
 - [React](#react)
   - [Async / Await](#async--await)
+  - [서버와 통신](#서버와-통신)
   - [Fetch API](#fetch-api)
   - [await 와 then](#await-와-then)
   - [Axios](#axios)
