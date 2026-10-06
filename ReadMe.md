@@ -34,3 +34,30 @@ npx create-next-app@latest 프로젝트명
 npm install
 npm run dev
 ```
+
+## Java 세팅
+### JDK 21 설치
+테무린 jdk 21 : https://adoptium.net/temurin/releases/?version=21&os=any&arch=any
+
+1. zip 파일 다운 및 압축 풀기
+2. 환경 변수 설정
+    1. 윈도우 검색 창 > 시스템 환경 변수 편집 > 환경 변수
+    2. 시스템 변수 > 새로 만들기 > JAVA_HOME [jdk bin 폴더가 있는 경로]
+    3. 시스템 변수 > Path 편집 > 새로 만들기 > `%JAVA_HOME%\bin` 추가 > JAVA_HOME 이 제일 위에 위치하도록 이동 (순서대로 찾기에 jdk 를 빨리 쉽게 찾게 하기 위해)
+3. jdk 세팅 확인
+    
+    ```bash
+    # cmd 창
+    java -version
+    ```
+    
+
+### IntelliJ 설치
+https://www.jetbrains.com/ko-kr/idea/download/?section=windows
+
+1. exe 파일 다운 및 설치 진행
+    1. Open Folder as Project 체크해두면 편함
+    2. .java 파일과 연결
+    3. Add “bin” folder to PATH 는 이미 하긴 했지만 체크
+2. ~~인코딩 설정~~
+    1. IntelliJ 가 설치된 위치의 bin 폴더 > .vmoptions 파일 중 자신의 OS bit 와 맞는 파일(idea64.exe.vmoptions)을 열어 `-Dfile.encoding=UTF-8` 을 추가한 후 저장
