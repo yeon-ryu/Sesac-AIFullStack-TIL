@@ -61,3 +61,9 @@ https://www.jetbrains.com/ko-kr/idea/download/?section=windows
     3. Add “bin” folder to PATH 는 이미 하긴 했지만 체크
 2. ~~인코딩 설정~~
     1. IntelliJ 가 설치된 위치의 bin 폴더 > .vmoptions 파일 중 자신의 OS bit 와 맞는 파일(idea64.exe.vmoptions)을 열어 `-Dfile.encoding=UTF-8` 을 추가한 후 저장
+
+
+## MySQL 설치
+8.0.40 버전 : https://dev.mysql.com/downloads/file/?id=536356
+
+Custom → MySQL Server 8.0.4, MySQL Workbench 8.0.4(Application 안) → Root 패스워드(학습용은 root 로) → Windows Service Name : MySQL, MySQL 자동 시작 설정 → User name : root, Password : 루트 비밀번호
