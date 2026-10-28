@@ -17,9 +17,9 @@ Iterable(I) - Collection(I) - List(I) - - - - - - - - - - - - - - - LinkedList
                                         - LinkedHashSet
 
 Map(I)  - StortedMap(I) - TreeMap
-		- Hashtable
-	 	- LikedHashMap
-		- HashMap
+        - Hashtable
+        - LikedHashMap
+        - HashMap
 ```
 
 (I) : 인터페이스
@@ -534,10 +534,10 @@ Unchecked Exception 계열은 기본적으로 이미 처리되어 있고 실행 
 
 ```
 Throwable - Error
-					- Exception (Unchecked Exception) - RuntimeException - NullPointerException
-																															 - ...
-												(Checked Exception) - IOException
-																						- ...
+                    - Exception (Unchecked Exception) - RuntimeException - NullPointerException
+                                                                         - ...
+                                  (Checked Exception) - IOException
+                                                      - ...
 ```
 
 - Checked Exception : 컴파일러가 처리 또는 throws 선언을 확인한다.
