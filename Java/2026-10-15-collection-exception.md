@@ -513,11 +513,9 @@ public class Application {
 
 | List | Set | Map |
 | --- | --- | --- |
-| 순서 O, 중복 O | 순서 X, 중복 X | key=value Entry |
-| key : 중복 X |  |  |
-| value : 중복 O |  |  |
+| 순서 O, 중복 O | 순서 X, 중복 X | key=value Entry, key : 중복 X, value : 중복 O |
 | ArrayList, LinkedList | HashSet |  |
-| Stack (LIFO) …UFO 처럼 보이기 시작한다.. | LinkedHashSet : 순서 O |  |
+| Stack (LIFO) | LinkedHashSet : 순서 O |  |
 | Queue (FIFO) | TreeSet : 비교 기준 정렬 O |  |
 | Collection 인터페이스 상속 |  | Collection 인터페이스 상속 X (직접적으로 향상된 for 문 사용 불가) |
 
