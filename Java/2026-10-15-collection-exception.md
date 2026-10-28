@@ -6,15 +6,15 @@
 
 ```
 Iterable(I) - Collection(I) - List(I) - - - - - - - - - - - - - - - LinkedList
-									    - ArrayList                     |
-									    - Vector        - Stack         |
+                                        - ArrayList                     |
+                                        - Vector        - Stack         |
                                                                         |
-							- Queue(I)  - Deque(I) - - - - - - - - - - -
-												        - ArrayDeque
+                            - Queue(I)  - Deque(I) - - - - - - - - - - -
+                                                        - ArrayDeque
 
-							- Set(I)    - SortedSet(I)  - TreeSet
-										- HashSet
-										- LinkedHashSet
+                            - Set(I)    - SortedSet(I)  - TreeSet
+                                        - HashSet
+                                        - LinkedHashSet
 
 Map(I)  - StortedMap(I) - TreeMap
 		- Hashtable
