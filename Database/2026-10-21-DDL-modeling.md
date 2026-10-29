@@ -77,7 +77,7 @@ ALTER TABLE TB2 DROP COLUMN col2;
 -- 컬럼 수정
 ALTER TABLE TB2 CHANGE COLUMN fk change_fk BIGINT;
 
--- 컬럼명만 수정
+-- 컬럼 타입만 수정
 ALTER TABLE tb2 MODIFY change_fk INT;
 ```
 
