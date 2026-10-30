@@ -10,7 +10,7 @@ HTTP (HyperText Transfer Protocol) : 클라이언트와 서버가 데이터를 �
 
 ### HTTP 구성
 
-HTTP Request
+#### HTTP Request
 
 1. Request Line
     - HTTP Method : GET, POST, PUT, PATCH, DELETE
@@ -30,7 +30,7 @@ HTTP Request
     ```
     
 
-HTTP Response
+#### HTTP Response
 
 1. Status Line
     - HTTP Version : ex. HTTP/1.1
@@ -103,7 +103,7 @@ Spring Boot 는 `@RestController` 어노테이션을 붙이면 해당 컨트롤�
 
 React → HTTP 요청 → Spring Boot REST API → DB 처리 → JSON 응답 → React 화면 렌더링
 
-REST API 중요 포인트  
+**REST API 중요 포인트**  
 - URL 은 리소스를 표현한다.
     - url 은 동사가 아니라 리소스 중심으로 작성 (동작은 HTTP Method 가 표현하고, URL 은 대상을 표현한다)
     - 리소스 이름은 보통 복수형으로 통일한다. (ex. 게시글 하나 등록 `POST /posts)`
@@ -496,6 +496,8 @@ public class SwaggerTestController {
 - [Spring Boot](#spring-boot)
   - [HTTP](#http)
     - [HTTP 구성](#http-구성)
+      - [HTTP Request](#http-request)
+      - [HTTP Response](#http-response)
     - [HTTP 상태 코드](#http-상태-코드)
     - [데이터 전달 방식](#데이터-전달-방식)
   - [JSON](#json)
