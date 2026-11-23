@@ -23,6 +23,9 @@
 ### Live Server
 Enable(Workspace) 를 누르고 오른쪽 아래 Go Live 를 누르면 저장한 변경사항이 바로 반영되는 웹 페이지 오픈
 
+### Python
+Ctrl + Shift + P : python select interpreter → 사용할 가상 환경 선택
+
 ## React 개발 환경 설정
 ### Next.js 프로젝트 생성
 ```bash
@@ -67,3 +70,8 @@ https://www.jetbrains.com/ko-kr/idea/download/?section=windows
 8.0.40 버전 : https://dev.mysql.com/downloads/file/?id=536356
 
 Custom → MySQL Server 8.0.4, MySQL Workbench 8.0.4(Application 안) → Root 패스워드(학습용은 root 로) → Windows Service Name : MySQL, MySQL 자동 시작 설정 → User name : root, Password : 루트 비밀번호
+
+
+## Python 세팅
+### conda-forge 설치
+https://conda-forge.org/ → Download Installer
