@@ -75,3 +75,19 @@ Custom → MySQL Server 8.0.4, MySQL Workbench 8.0.4(Application 안) → Root �
 ## Python 세팅
 ### conda-forge 설치
 https://conda-forge.org/ → Download Installer
+
+### 파이썬 라이브러리 설치
+
+```bash
+# openai, env 를 사용하기 위한 라이브러리
+pip install openai python-dotenv
+
+# langChain 을 사용하기 위한 라이브러리
+pip install langchain-core langchain-openai
+
+# 검증을 편하게 하기 위한 라이브러리
+pip install pydantic
+
+# pdf 로딩 라이브러리
+pip install pypdf
+```
