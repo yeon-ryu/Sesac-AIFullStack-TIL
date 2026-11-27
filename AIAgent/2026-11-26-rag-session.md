@@ -22,7 +22,9 @@ VectorStore : 벡터 저장소
 
 `VectorStoreRetriever` : 검색 도구
 
-- `search_kwargs` : 검색에 대한 옵션. search keyword arguments 란 의미. k : 가져올 후보 최대 갯수 (디폴트는 최대 4개)
+- `search_kwargs` : 검색에 대한 옵션. search keyword arguments 란 의미.
+    - k : 가져올 후보 최대 갯수 (디폴트는 최대 4개)
+    - filter : metadata 정보로 필터링
 
 ```python
 from pathlib import Path
@@ -286,6 +288,8 @@ def main():
     - `checkpointer` : 대화 기록을 포함한 실행 상태를 저장할 장치 지정
 - `InMemorySaver()` : 실행 상태를 프로그램 메모리에 보관
 - `{"configurable": {"thread_id": session_id}}` → thread_id : 세션 ID 에 해당. 잘 설정해줘야 한다. 이 config 를 `agent.invoke()` 할 때 config 속성에 넣어준다.
+- `get_state(config)` : 해당 대화 ID의 현재 상태 스냅샷 조회. 모델을 다시 호출하지 않음.
+- `.values` : 스냅샷의 상태 딕셔너리. 딕셔너리의 `values()` 메소드와 구분.
 
 ```python
 from dotenv import load_dotenv
@@ -346,6 +350,12 @@ if __name__ == "__main__":
     except APIError as error:
         print("API 요청 실패", type(error))
 ```
+
+※ 대화형 서비스에서는 같은 개인 정보가 여러 곳에 저장되어 있을 수 있다. (프로필, 대화 원문, 체크 포인트 등 정보가 보관된 위치별로 삭제 대상을 구분)
+
+- `dict.pop("key", default)` : 딕셔너리에서 키를 제거하고 제거한 값을 반환한다. 딕셔너리에 해당 키 값이 없을 경우 default 를 반환한다.
+
+&nbsp;
 
 - [RAG](#rag)
   - [Retrieval](#retrieval)

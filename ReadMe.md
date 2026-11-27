@@ -26,6 +26,13 @@ Enable(Workspace) 를 누르고 오른쪽 아래 Go Live 를 누르면 저장한
 ### Python
 Ctrl + Shift + P : python select interpreter → 사용할 가상 환경 선택
 
+### Jupyter (셀에서 코드 한 줄 당 실행해보기 위한 도구)
+ - `.ipynb` 형식 파일
+ - 오른쪽 상단 Select Kernel 눌러서 파이썬 환경 선택
+ - Shift + Enter 이나 Ctrl + Enter 로 한 셀씩 실행
+ - 설정 → notebook output, notebook mouse 등 으로 개별 설정
+ - import 구문도 셀에 존재해야 함, 실제 파이썬 코드와 문법이 약간 다름, 코드를 실행해야 실행 메모리에 저장됨
+
 ## React 개발 환경 설정
 ### Next.js 프로젝트 생성
 ```bash
@@ -90,4 +97,10 @@ pip install pydantic
 
 # pdf 로딩 라이브러리
 pip install pypdf
+
+# 세션 메모리를 사용하기 위해 설치한 라이브러리
+pip install langgraph langchain
+
+# 문서와 벡터를 저장해 놓는 chroma 를 사용하기 위한 라이브러리
+pip install langchain_chroma
 ```
